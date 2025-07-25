@@ -10,7 +10,8 @@ This design is a shadow demo of a more robust ULTRASCALE+ implementation.
 The selected device has an onboard oscillator of 12Mhz. I use a Mixed-Clock Module (MMCM) to generate a 100 MHz clock. You need the clocking IP to be compatible with the xc7a35tcpg236-1 device. 
 
 **Prerequisites:**
-Vivado 2024.2
+Vivado 2024.2 
+
 xc7a35tcpg236-1 device licence 
 
 
