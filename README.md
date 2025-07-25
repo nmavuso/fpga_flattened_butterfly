@@ -14,6 +14,7 @@ The selected device has an onboard oscillator of 12Mhz. I use a Mixed-Clock Modu
 ```Vivado 2024.2```
 
 ```xc7a35tcpg236-1 device licence``` 
+
 **Elaborated Design**
 <img width="2490" height="1415" alt="Screenshot from 2025-07-25 17-02-55" src="https://github.com/user-attachments/assets/e9e6586c-51a3-4549-a459-e7409ce402d2" />
 
