@@ -15,8 +15,8 @@ The selected device has an onboard oscillator of 12Mhz. I use a Mixed-Clock Modu
 
 ```xc7a35tcpg236-1 device licence``` 
 
-Synthesized Designed 
+**Synthesized Designed**
 <img width="2490" height="1415" alt="Screenshot from 2025-07-25 16-50-48" src="https://github.com/user-attachments/assets/433129e5-158a-4661-9f4c-845e0cb9debc" />
 
-Implemented Design 
+**Implemented Design** 
 <img width="2490" height="1415" alt="Screenshot from 2025-07-25 16-59-09" src="https://github.com/user-attachments/assets/7dbecc59-a0d2-4957-b8d7-e4ce407876e7" />
