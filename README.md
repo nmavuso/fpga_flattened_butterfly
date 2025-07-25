@@ -1,7 +1,7 @@
 # FPGA Flattened Butterfly
 This repo demonstrates a light-weight flattened butterfly Network on a Chip (NoC) on a 7-series FPGA. It is fully connected for structure and involves simplified hashing Processing Elements.
 
-This code is demonstrated on a simple XC7A35T FPGA, and was designed to meet the 2000 available LUTs. The XC7A35T device has a limit of 56 I/O ports, which makes it infeasible for full functionality. Pipelining and ingress & egress can further be added to allow connecting with a PCIE.  
+This code is demonstrated on a simple XC7A35T FPGA, and was designed to meet the 20,000 available LUTs. The XC7A35T device has a limit of 56 I/O ports, which makes it infeasible for full functionality. Pipelining and ingress & egress can further be added to allow connecting with a PCIE.  
 
 High-speed interfaces, such as a Serial/Deserializer (SERDES), can be added for more efficiency in communication. 
 
