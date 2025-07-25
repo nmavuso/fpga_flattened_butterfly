@@ -1,0 +1,578 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jul 25 16:06:22 2025
+# Process ID         : 1773226
+# Current directory  : /home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1
+# Command line       : vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : /home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1/top.vds
+# Journal file       : /home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1/vivado.jou
+# Running On         : eiffel-ubuntu
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : AMD Ryzen 9 5950X 16-Core Processor
+# CPU Frequency      : 2200.000 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 134967 MB
+# Swap memory        : 8192 MB
+# Total Virtual      : 143160 MB
+# Available Virtual  : 97593 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/eiffel/tools/XIlinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/utils_1/imports/synth_1/flattened_butterfly_noc.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/utils_1/imports/synth_1/flattened_butterfly_noc.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1773372
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2116.867 ; gain = 416.684 ; free physical = 62178 ; free virtual = 91961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/top.sv:45]
+INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/top.sv:46]
+INFO: [Synth 8-11241] undeclared symbol 'reset', assumed default net type 'wire' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/top.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'hashing_pe' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/processing_element.sv:23]
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter PKT_NO_FIELD_SIZE bound to: 8 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+	Parameter ROUTER_FLIT_WIDTH bound to: 36 - type: integer 
+	Parameter TOTAL_WIDTH bound to: 44 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/processing_element.sv:83]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/processing_element.sv:97]
+INFO: [Synth 8-6155] done synthesizing module 'hashing_pe' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/processing_element.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'feedclock' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.gen/sources_1/bd/feedclock/synth/feedclock.v:13]
+INFO: [Synth 8-6157] synthesizing module 'feedclock_clk_wiz_0_0' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1/.Xil/Vivado-1773226-eiffel-ubuntu/realtime/feedclock_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'feedclock_clk_wiz_0_0' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1/.Xil/Vivado-1773226-eiffel-ubuntu/realtime/feedclock_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'feedclock' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.gen/sources_1/bd/feedclock/synth/feedclock.v:13]
+INFO: [Synth 8-6157] synthesizing module 'flattened_butterfly_noc' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/flattened_butterfly_noc.sv:6]
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter PKT_NO_FIELD_SIZE bound to: 8 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+	Parameter ROUTER_FLIT_WIDTH bound to: 36 - type: integer 
+	Parameter TOTAL_WIDTH bound to: 44 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fb_router' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 0 - type: integer 
+	Parameter Y_COORD bound to: 0 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rr_arbiter' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/rr_arbiter.sv:3]
+	Parameter NUM_REQUESTERS bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rr_arbiter' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/rr_arbiter.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'fb_router' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized0' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 1 - type: integer 
+	Parameter Y_COORD bound to: 0 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized0' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized1' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 2 - type: integer 
+	Parameter Y_COORD bound to: 0 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized1' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized2' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 3 - type: integer 
+	Parameter Y_COORD bound to: 0 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized2' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized3' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 0 - type: integer 
+	Parameter Y_COORD bound to: 1 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized3' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized4' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 1 - type: integer 
+	Parameter Y_COORD bound to: 1 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized4' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized5' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 2 - type: integer 
+	Parameter Y_COORD bound to: 1 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized5' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized6' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 3 - type: integer 
+	Parameter Y_COORD bound to: 1 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized6' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized7' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 0 - type: integer 
+	Parameter Y_COORD bound to: 2 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized7' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized8' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 1 - type: integer 
+	Parameter Y_COORD bound to: 2 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized8' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized9' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 2 - type: integer 
+	Parameter Y_COORD bound to: 2 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized9' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized10' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 3 - type: integer 
+	Parameter Y_COORD bound to: 2 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized10' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized11' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 0 - type: integer 
+	Parameter Y_COORD bound to: 3 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized11' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized12' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 1 - type: integer 
+	Parameter Y_COORD bound to: 3 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized12' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized13' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 2 - type: integer 
+	Parameter Y_COORD bound to: 3 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized13' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'fb_router__parameterized14' [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter X_DIM bound to: 4 - type: integer 
+	Parameter Y_DIM bound to: 4 - type: integer 
+	Parameter X_COORD bound to: 3 - type: integer 
+	Parameter Y_COORD bound to: 3 - type: integer 
+	Parameter X_SIZE bound to: 2 - type: integer 
+	Parameter Y_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fb_router__parameterized14' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/fb_router.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'flattened_butterfly_noc' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/flattened_butterfly_noc.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/top.sv:23]
+WARNING: [Synth 8-3848] Net reset in module/entity top does not have driver. [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/sources_1/new/top.sv:47]
+WARNING: [Synth 8-7129] Port o_ready_dimX[3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_ready_dimY[3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_data_dimY[2][3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_data_dimY[2][2] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_data_dimY[2][1] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_data_dimY[2][0] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[7] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[6] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[5] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[4] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[2] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[1] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[0] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[35] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[34] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[33] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[32] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[31] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[30] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[29] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[28] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[27] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[26] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[25] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[24] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[23] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[22] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[21] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[20] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[19] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[18] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[17] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[16] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[15] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[14] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[13] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[12] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[11] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[10] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[9] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[8] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[7] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[6] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[5] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[4] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[2] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[1] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_pe[0] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_valid_pe in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ready_pe in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][35] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][34] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][33] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][32] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][31] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][30] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][29] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][28] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][27] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][26] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][25] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][24] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][23] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][22] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][21] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][20] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][19] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][18] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][17] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][16] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][15] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][14] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][13] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][12] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][11] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][10] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][9] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][8] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][7] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][6] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][5] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][4] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][2] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][1] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimX[3][0] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_valid_dimX[3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ready_dimX[3] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][35] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][34] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][33] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][32] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][31] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][30] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][29] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][28] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][27] in module fb_router__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_data_dimY[3][26] in module fb_router__parameterized14 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2318.836 ; gain = 618.652 ; free physical = 61974 ; free virtual = 91760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2333.680 ; gain = 633.496 ; free physical = 61975 ; free virtual = 91761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2333.680 ; gain = 633.496 ; free physical = 61975 ; free virtual = 91761
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2333.680 ; gain = 0.000 ; free physical = 61989 ; free virtual = 91775
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.gen/sources_1/bd/feedclock/ip/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0_in_context.xdc] for cell 'feedclock_i/clk_wiz_0'
+Finished Parsing XDC File [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.gen/sources_1/bd/feedclock/ip/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0_in_context.xdc] for cell 'feedclock_i/clk_wiz_0'
+Parsing XDC File [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2461.418 ; gain = 0.000 ; free physical = 61974 ; free virtual = 91760
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2461.418 ; gain = 0.000 ; free physical = 61974 ; free virtual = 91760
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2461.418 ; gain = 761.234 ; free physical = 61975 ; free virtual = 91761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2469.422 ; gain = 769.238 ; free physical = 61975 ; free virtual = 91761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_12MHz. (constraint file  /home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.gen/sources_1/bd/feedclock/ip/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_12MHz. (constraint file  /home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.gen/sources_1/bd/feedclock/ip/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0/feedclock_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for feedclock_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for feedclock_i/clk_wiz_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2469.422 ; gain = 769.238 ; free physical = 61975 ; free virtual = 91761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2469.422 ; gain = 769.238 ; free physical = 61962 ; free virtual = 91753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2469.422 ; gain = 769.238 ; free physical = 61962 ; free virtual = 91753
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'hashing_pe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                 HASHING |                              010 |                               01
+                    SEND |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'hashing_pe'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 2469.422 ; gain = 769.238 ; free physical = 61951 ; free virtual = 91741
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 168   
+	   2 Input    4 Bit       Adders := 28    
++---XORs : 
+	   4 Input      8 Bit         XORs := 16    
++---Registers : 
+	               36 Bit    Registers := 256   
+	                7 Bit    Registers := 112   
+	                1 Bit    Registers := 240   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 357   
+	   2 Input    7 Bit        Muxes := 32    
+	   2 Input    6 Bit        Muxes := 7     
+	   2 Input    5 Bit        Muxes := 28    
+	   2 Input    1 Bit        Muxes := 1728  
+	   3 Input    1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port o_ready_pe driven by constant 1
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port o_valid_dimY[3] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port o_valid_dimY[2] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[43] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[42] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[41] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[40] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[39] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[38] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[37] driven by constant 0
+WARNING: [Synth 8-3917] design fb_router__parameterized3 has port packet_out[36] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 2497.355 ; gain = 797.172 ; free physical = 55414 ; free virtual = 85245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:02 . Memory (MB): peak = 2558.434 ; gain = 858.250 ; free physical = 56981 ; free virtual = 86838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:19 . Memory (MB): peak = 2700.434 ; gain = 1000.250 ; free physical = 56897 ; free virtual = 86755
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:26 . Memory (MB): peak = 2712.359 ; gain = 1012.176 ; free physical = 56266 ; free virtual = 86128
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:29 . Memory (MB): peak = 2727.250 ; gain = 1027.066 ; free physical = 56256 ; free virtual = 86134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:29 . Memory (MB): peak = 2727.250 ; gain = 1027.066 ; free physical = 56256 ; free virtual = 86134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:30 . Memory (MB): peak = 2727.250 ; gain = 1027.066 ; free physical = 56252 ; free virtual = 86130
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:30 . Memory (MB): peak = 2727.250 ; gain = 1027.066 ; free physical = 56252 ; free virtual = 86130
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:31 . Memory (MB): peak = 2727.250 ; gain = 1027.066 ; free physical = 56253 ; free virtual = 86131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:31 . Memory (MB): peak = 2727.250 ; gain = 1027.066 ; free physical = 56253 ; free virtual = 86131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |feedclock_clk_wiz_0_0 |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |feedclock_clk_wiz_0 |     1|
+|2     |LUT1                |   241|
+|3     |LUT2                |   576|
+|4     |LUT3                |   997|
+|5     |LUT4                |   812|
+|6     |LUT5                |  7472|
+|7     |LUT6                |  8538|
+|8     |FDCE                | 10096|
+|9     |FDPE                |   128|
+|10    |IBUF                |    38|
+|11    |OBUF                |    46|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:31 . Memory (MB): peak = 2727.250 ; gain = 1027.066 ; free physical = 56253 ; free virtual = 86132
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 612 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 2731.164 ; gain = 903.242 ; free physical = 61781 ; free virtual = 91635
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:33 . Memory (MB): peak = 2731.164 ; gain = 1030.980 ; free physical = 61779 ; free virtual = 91632
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2731.164 ; gain = 0.000 ; free physical = 61926 ; free virtual = 91797
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2775.273 ; gain = 0.000 ; free physical = 61932 ; free virtual = 91803
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ab99c6fe
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 2775.273 ; gain = 1271.648 ; free physical = 61936 ; free virtual = 91806
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8426.610; main = 1929.914; forked = 6978.299
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 15776.727; main = 2775.277; forked = 13283.285
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2799.285 ; gain = 0.000 ; free physical = 61936 ; free virtual = 91806
+INFO: [Common 17-1381] The checkpoint '/home/eiffel/flattened_butterfly_NoC/flattened_butterfly_NoC.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 25 16:08:11 2025...
